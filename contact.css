@@ -1,0 +1,25 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #1e1e2f, #151520);
+    color: #f4f4f4;
+    background-image: url('back-img.avif');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+  }
+   
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #00d1b2;
+    letter-spacing: 1.5px;
+  }
+
+/* Contact Section */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  

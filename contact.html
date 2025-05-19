@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="bg-img">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saniya | Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item logo" href="index.html">Saniya</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="skills.html">
+            Skills
+          </a>
+          <a class="navbar-item" href="projects.html">
+            Projects
+          </a>
+          <a class="navbar-item" href="experience.html">
+            Experience
+          </a>
+          <a class="navbar-item is-active" href="contact.html">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="section has-text-centered">
+    <div class="container">
+      <h1 class="title has-text-white">Let's <span class="highlight">Connect</span></h1>
+      <p class="subtitle has-text-grey-light mb-5">
+        Open for remote and hybrid opportunities.
+      </p>
+  
+      <div class="buttons is-centered">
+        <a class="button is-dark has-tooltip-bottom" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/sayida-saniya/" target="_blank">
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+  
+        <a class="button is-dark has-tooltip-bottom" data-tooltip="GitHub" href="https://github.com/SayidaSaniya06/" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>GitHub</span>
+        </a>
+  
+        <a class="button is-dark has-tooltip-bottom" data-tooltip="Email Me" href="mailto:sayidasaniya99@gmail.com">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Email</span>
+        </a>
+  
+        <a class="button is-dark has-tooltip-bottom" data-tooltip="Instagram" href="https://www.instagram.com/sayida_saniya_06/" target="_blank">
+          <span class="icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Mobile navbar toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.getElementById(burger.dataset.target);
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>

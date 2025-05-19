@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="bg-img">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saniya | Projects</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item logo" href="index.html">Saniya</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="skills.html">
+            Skills
+          </a>
+          <a class="navbar-item is-active" href="projects.html">
+            Projects
+          </a>
+          <a class="navbar-item" href="experience.html">
+            Experience
+          </a>
+          <a class="navbar-item" href="contact.html">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="projects-div">
+    <div class="columns projects-flex-div">
+      <div class="column project-intro">
+        <h1 class="project-title"><span class="num">01</span> Movie Land</h1>
+        <p class="project-desc">
+          Movie Land is a dynamic React JS-powered platform that effortlessly guides users to discover the latest trending movies.
+        </p>
+        <p class="project-tech">
+         <span class="tech">Technologies Used:</span> HTML, CSS, JavaScript, Rect Js 
+        </p>
+      </div>
+      <div class="column project-img-div">
+        <img class="project-img" src="movie-land-img.png" alt="Movie Land Project" loading="lazy">
+      </div>
+     
+    </div>
+    <div class="buttons has-text-centered" style="margin-top: 20px;">
+      <button id="prevBtn" class="button is-light"><i class="fa-solid fa-less-than"></i></button>
+      <button id="nextBtn" class="button is-info"><i class="fa-solid fa-greater-than"></i></button>
+    </div>
+  </section>
+  <script>
+    // Mobile navbar toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.getElementById(burger.dataset.target);
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
